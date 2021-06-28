@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template casamento 1</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="player">
+      <audio controls autoplay>
+        <source src="horse.ogg" type="audio/ogg" />
+        <source
+          src="/musica/pra voce guardei o amor nando reis e ana canas lolle e fabricio festa cover - [Baixar Musicas].mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </div> -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top">
+        <div class="w3-container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright"
+            >X</span
+          >
+          <p class="text-center">Confirme sua presença</p>
+          <form>
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="fname" />
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" />
+            <label for="phone">Telefone:</label>
+            <input type="number" id="phone" name="phone" />
+            <label for="filhos">Quantos filhos ?</label>
+            <input
+              type="number"
+              id="filhos"
+              name="filhos"
+              min="0"
+              max="6"
+              maxlength="6"
+            />
+            <button id="button-submit" type="submit" value="Confirmar">
+              Confirmar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Header-->
+    <header>
+      <div class="container header-content">
+        <div class="logo"><a href="index.html">Carla & Tiago</a></div>
+        <div class="menu">
+          <nav>
+            <ul class="d-flex">
+              <li>
+                <div class="subnav">
+                  <a href="#">Paginas<i class="fa fa-caret-down"></i></a>
+                  <ul class="subnav-content">
+                    <li><a href="nossa-historia.html">Nossa história</a></li>
+                    <li><a href="festa.html">Festa</a></li>
+                    <li><a href="#">Cerimonia</a></li>
+                    <li><a href="#">Mensagens aos noivos</a></li>
+                    <li><a href="#">Dicas</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="presentes.html">Presentes</a></li>
+              <li>
+                <a
+                  onclick="document.getElementById('id01').style.display='flex'"
+                  href="#"
+                  >Confirmar Presença</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-mobile">
+          <div onclick="showMenu()" class="menu-mobile-icon">
+            
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            
+          </div>
+          <div id="menu" class="menu-mobile-nav">
+            <nav>
+              <ul class="menu-mobile-subnav-content">
+                <li><a href="nossa-historia.html">Nossa história</a></li>
+                <li><a href="festa.html">Festa</a></li>
+                <li><a href="#">Cerimonia</a></li>
+                <li><a href="#">Mensagens aos noivos</a></li>
+                <li><a href="#">Dicas</a></li>
+                <li><a href="presentes.html">Presentes</a></li>
+                <li>
+                  <a
+                    onclick="document.getElementById('id01').style.display='flex'"
+                    href="#"
+                    >Confirmar Presença</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Banner -->
+    <section>
+      <div class="banner">
+        <div class="banner-text">
+          <h1>Carla & Tiago</h1>
+          <p>Juntos para sempre</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="d-flex jc-center">
+        <div class="welcome">
+          <h2>Sejam bem-vindos ao nosso site</h2>
+        </div>
+      </div>
+    </section>
+    <div class="background-kraft">
+      <section>
+        <div class="d-flex jc-center info">
+          <p>
+            Aqui vamos compartilhar com vocês, queridos amigos e familiares,
+            nossos melhores momentos juntos, nossa história de amor e todos os
+            detalhes da jornada mais incrível da nossa vida: o início da nossa
+            família. O coração acelera e a ansiedade é grande pra dizermos o
+            nosso "sim" ao lado das pessoas mais importantes das nossas vidas!
+          </p>
+        </div>
+        <div class="countdown">
+          <h3>Contagem regressiva para o grande dia</h3>
+          <div class="box-time">
+            <div class="box-time-numbers">
+              <div class="box-time-paragraph">
+                <p>Dias</p>
+                <div class="box-time-out">
+                  <div class="time" id="dia"></div>
+                </div>
+              </div>
+              <div class="box-time-paragraph">
+                <p>Horas</p>
+                <div class="box-time-out">
+                  <div class="time" id="hora"></div>
+                </div>
+              </div>
+              <div class="box-time-paragraph">
+                <p>Minutos</p>
+                <div class="box-time-out">
+                  <div class="time" id="minuto"></div>
+                </div>
+              </div>
+              <div class="box-time-paragraph">
+                <p>Segundos</p>
+                <div class="box-time-out">
+                  <div class="time" id="segundo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="slide">
+          <img src="/Imagens/Rectangle 24.png" alt="Foto do casal" />
+        </div>
+      </section>
+      <section>
+        <div class="photos-box">
+          <div class="d-flex container jc-between photos">
+            <div onclick="document.getElementById('id03').style.display='block'" class="photo-1"></div>
+            <div onclick="document.getElementById('id03').style.display='block'" class="photo-2"></div>
+            <div onclick="document.getElementById('id03').style.display='block'" class="photo-3"></div>
+            <div onclick="document.getElementById('id03').style.display='block'" class="photo-4"></div>
+            <div onclick="document.getElementById('id03').style.display='block'" class="photo-5"></div>
+            <div onclick="document.getElementById('id03').style.display='block'" class="photo-6"></div>
+          </div>
+        </div>
+        <div id="id03" class="photos-modal">
+          <div onclick="document.getElementById('id03').style.display='none'" class="close-modal">X</div>
+          <a class="arrow-left" onclick="plusSlides(-1)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-bar-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0zM4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z"/>
+            </svg>
+          </a>
+          <a class="arrow-right" onclick="plusSlides(1)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-bar-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+          </a>
+
+          <div class="mySlides photo-modal-1">
+            <img src="/Imagens/Casal-maior.png" alt="">
+          </div>
+
+          <div class="mySlides photo-modal-1">
+            <img src="/Imagens/Casal-maior-2.png" alt="">
+          </div>
+
+          <div class="mySlides photo-modal-1">
+            <img src="/Imagens/Casal-maior-3.png" alt="">
+          </div>
+
+          <div class="mySlides photo-modal-1">
+            <img src="/Imagens/Casal-maior-4.png" alt="">
+          </div>
+
+          <div class="mySlides photo-modal-1">
+            <img src="/Imagens/Casal-maior-5.png" alt="">
+          </div>
+
+          <div class="mySlides photo-modal-1">
+            <img src="/Imagens/Casal-maior-6.png" alt="">
+          </div>
+
+        </div>
+        <script>
+          
+          </script>
+          
+      </section>
+    </div>
+    <section>
+      <div class="quote container">
+        <quote>
+          ''O casal feliz reconhece o seu erro, valoriza as qualidades do outro,
+          ama o tempo todo e, mesmo brigados, nunca se separam, pois se amam
+          demais.''
+        </quote>
+      </div>
+    </section>
+    <footer>
+      <div class="d-flex footer">
+        <span>Todos os direitos reservados</span>
+        <span
+          ><a href="https://fernandesdesenvolvimento.com.br/"
+            >Fernandes Desenvolvimetos
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-box-arrow-up-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+              /></svg></a
+        ></span>
+        <span>Carla Galdino Designer</span>
+      </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+    
+  </body>
+</html>

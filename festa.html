@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festa</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="background-kraft">
+    <!-- <div class="player">
+      <audio controls autoplay>
+        <source src="horse.ogg" type="audio/ogg" />
+        <source
+          src="/musica/pra voce guardei o amor nando reis e ana canas lolle e fabricio festa cover - [Baixar Musicas].mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </div> -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top">
+        <div class="w3-container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright"
+            >X</span
+          >
+          <p class="text-center">Confirme sua presença</p>
+          <form>
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="fname" />
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" />
+            <label for="phone">Telefone:</label>
+            <input type="number" id="phone" name="phone" />
+            <label for="filhos">Quantos filhos ?</label>
+            <input
+              type="number"
+              id="filhos"
+              name="filhos"
+              min="0"
+              max="6"
+              maxlength="6"
+            />
+            <button id="button-submit" type="submit" value="Confirmar">
+              Confirmar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Header-->
+    <header>
+      <div class="container header-content">
+        <div class="logo"><a href="index.html">Carla & Tiago</a></div>
+        <div class="menu">
+          <nav>
+            <ul class="d-flex">
+              <li>
+                <div class="subnav">
+                  <a href="#">Paginas<i class="fa fa-caret-down"></i></a>
+                  <ul class="subnav-content">
+                    <li><a href="nossa-historia.html">Nossa história</a></li>
+                    <li><a href="festa.html">Festa</a></li>
+                    <li><a href="#">Cerimonia</a></li>
+                    <li><a href="#">Mensagens aos noivos</a></li>
+                    <li><a href="#">Dicas</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="presentes.html">Presentes</a></li>
+              <li>
+                <a
+                  onclick="document.getElementById('id01').style.display='flex'"
+                  href="#"
+                  >Confirmar Presença</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-mobile">
+          <div class="menu-mobile-icon">
+            <a onclick="showMenu()" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div id="menu" class="menu-mobile-nav">
+            <nav>
+              <ul class="menu-mobile-subnav-content">
+                <li><a href="nossa-historia.html">Nossa história</a></li>
+                <li><a href="festa.html">Festa</a></li>
+                <li><a href="#">Cerimonia</a></li>
+                <li><a href="#">Mensagens aos noivos</a></li>
+                <li><a href="#">Dicas</a></li>
+                <li><a href="presentes.html">Presentes</a></li>
+                <li>
+                  <a
+                    onclick="document.getElementById('id01').style.display='flex'"
+                    href="#"
+                    >Confirmar Presença</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Local da festa -->
+    <section>
+      <div class="local container">
+        <h3>Local do Evento</h3>
+        <h4>Buffet villa do lago</h4>
+        <p>Prepare-se para comemorar conosco em grande estilo.</p>
+      </div>
+      <div class="container">
+        <div class="d-flex local-photos">
+          <div class="local-photo-1"></div>
+          <div class="local-photo-2"></div>
+          <div class="local-photo-3"></div>
+        </div>
+      </div>
+      <div class="container mapa">
+        <a
+          class="map"
+          target="_blank"
+          href="https://goo.gl/maps/SqomdcWMZJVixA5EA"
+        ></a>
+      </div>
+      <div class="route">
+        <form action="">
+          <label for="route"
+            >Digite aqui o endereço de origem para traçar uma rota</label
+          >
+          <input type="text" id="route" name="route" />
+          <button>traçar rota</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="d-flex footer">
+        <span>Todos os direitos reservados</span>
+        <span
+          ><a href="https://fernandesdesenvolvimento.com.br/"
+            >Fernandes Desenvolvimetos
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-box-arrow-up-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+              /></svg></a
+        ></span>
+        <span>Carla Galdino Designer</span>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
